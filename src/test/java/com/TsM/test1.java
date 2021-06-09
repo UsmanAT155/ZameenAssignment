@@ -373,7 +373,7 @@ public void thirdTestCase() throws InterruptedException, AWTException {
 @AfterMethod
 public void closeBrowser()
 {
-    //dv.close();
+    dv.close();
 }
 		}
 
