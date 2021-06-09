@@ -221,7 +221,7 @@ public void thirdTestCase() throws InterruptedException, AWTException {
 
 	String a2 = mapwindow.get(0).findElement(By.className("_1afu10la")).getText().toString().trim();
 	String a3 = mapwindow.get(0).findElement(By.className("_1spi1ps9")).getText().toString().trim();
-	String a4 = mapwindow.get(0).findElement(By.className("_16shi2n")).getText().toString().trim();
+//*	String a4 = mapwindow.get(0).findElement(By.className("_16shi2n")).getText().toString().trim();
 	String a5 = mapwindow.get(0).findElement(By.className("_155sga30")).getText().toString().trim();
 	String a6 = mapwindow.get(0).findElement(By.className("_ujf3ni")).getText().toString().trim();
 
@@ -232,25 +232,25 @@ public void thirdTestCase() throws InterruptedException, AWTException {
 
 //String mapstring=a1.replace("\r\n"
 	//	+ " ","")+" "+a2.replace("· ","in ")+" "+a3+" "+a4+" "+a5+" "+a6;
-	String mapstring = a2.replace("· ", "in ") + " " + a3 + " " + a4 + " " + a5 + " " + a6;
+	String mapstring = a2.replace("· ", "in ") + " " + a3 + " " + a5 + " " + a6;
 
 
 	List<WebElement> resultwindow = dv.findElements(By.className("_12oal24"));
 
 
 //String b1=mapwindow.get(0).findElement(By.className("_18khxk1")).getText().toString().trim();
-	String b2 = mapwindow.get(0).findElement(By.className("_1olmjjs6")).getText().toString().trim();
+	String b2 = mapwindow.get(0).findElement(By.xpath("//*[@id=\"ExploreLayoutController\"]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[3]/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div/div[1]/div")).getText().toString().trim();
 	String b3 = mapwindow.get(0).findElement(By.className("_5kaapu")).getText().toString().trim();
-	String b4 = mapwindow.get(0).findElement(By.className("_16shi2n")).getText().toString().trim();
+//*	String b4 = mapwindow.get(0).findElement(By.className("_16shi2n")).getText().toString().trim();
     String b5=  mapwindow.get(0).findElement(By.className("_155sga30")).getText().toString().trim();
     String b6=  mapwindow.get(0).findElement(By.className("_ujf3ni")).getText().toString().trim();
 
 
 
-	System.out.println(b2 + " " + b3 + " " + b4+" "+b5+" "+b6);
+	System.out.println(b2 + " " + b3 +" "+b5+" "+b6);
 	System.out.println("Final String is " + mapstring);
 
-	String resultstring = b2 + " " + b3 + " " + b4+" "+b5+" "+b6;
+	String resultstring = b2 + " " + b3+" "+b5+" "+b6;
 
 	if (resultstring.equalsIgnoreCase(mapstring)) {
 		Assert.assertEquals(1, 1);
@@ -373,7 +373,7 @@ public void thirdTestCase() throws InterruptedException, AWTException {
 @AfterMethod
 public void closeBrowser()
 {
-    dv.close();
+    //dv.close();
 }
 		}
 
