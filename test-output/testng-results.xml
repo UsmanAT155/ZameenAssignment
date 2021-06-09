@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-07T11:39:32 PKT" name="Default suite" finished-at="2021-06-07T11:46:49 PKT" duration-ms="436869">
+    <groups>
+    </groups>
+    <test started-at="2021-06-07T11:39:32 PKT" name="Default test" finished-at="2021-06-07T11:46:49 PKT" duration-ms="436869">
+      <class name="com.TsM.test1">
+        <test-method signature="firstTestCase()[pri:0, instance:com.TsM.test1@434a63ab]" started-at="2021-06-07T11:39:32 PKT" name="firstTestCase" finished-at="2021-06-07T11:41:17 PKT" duration-ms="104353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTestCase -->
+        <test-method signature="secondTestCase()[pri:0, instance:com.TsM.test1@434a63ab]" started-at="2021-06-07T11:41:17 PKT" name="secondTestCase" finished-at="2021-06-07T11:44:43 PKT" duration-ms="206652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTestCase -->
+        <test-method signature="thirdTestCase()[pri:0, instance:com.TsM.test1@434a63ab]" started-at="2021-06-07T11:44:43 PKT" name="thirdTestCase" finished-at="2021-06-07T11:46:49 PKT" duration-ms="125573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdTestCase -->
+      </class> <!-- com.TsM.test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
