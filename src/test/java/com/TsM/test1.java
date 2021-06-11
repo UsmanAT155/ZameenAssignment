@@ -239,7 +239,7 @@ public void thirdTestCase() throws InterruptedException, AWTException {
 
 
 //String b1=mapwindow.get(0).findElement(By.className("_18khxk1")).getText().toString().trim();
-	String b2 = mapwindow.get(0).findElement(By.xpath("//*[@id=\"ExploreLayoutController\"]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[3]/div/div/div/div/div[1]/div/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div/div[1]/div")).getText().toString().trim();
+	String b2 = mapwindow.get(0).findElement(By.xpath("//*[@id=\"ExploreLayoutController\"]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[3]/div/div/div/div/div[1]/div/div/div/div/div[2]/div[2]/div[1]/div/div[1]/div")).getText().toString().trim();
 	String b3 = mapwindow.get(0).findElement(By.className("_5kaapu")).getText().toString().trim();
 //*	String b4 = mapwindow.get(0).findElement(By.className("_16shi2n")).getText().toString().trim();
     String b5=  mapwindow.get(0).findElement(By.className("_155sga30")).getText().toString().trim();
