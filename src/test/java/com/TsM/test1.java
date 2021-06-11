@@ -234,16 +234,16 @@ public void thirdTestCase() throws InterruptedException, AWTException {
 	//	+ " ","")+" "+a2.replace("· ","in ")+" "+a3+" "+a4+" "+a5+" "+a6;
 	String mapstring = a2.replace("· ", "in ") + " " + a3 + " " + a5 + " " + a6;
 
+    List<WebElement> resultwindow = dv.findElements(By.className("_12oal24"));
 
-	List<WebElement> resultwindow = dv.findElements(By.className("_12oal24"));
 
 
 //String b1=mapwindow.get(0).findElement(By.className("_18khxk1")).getText().toString().trim();
-	String b2 = mapwindow.get(0).findElement(By.xpath("//*[@id=\"ExploreLayoutController\"]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[3]/div/div/div/div/div[1]/div/div/div/div/div[2]/div[2]/div[1]/div/div[1]/div")).getText().toString().trim();
-	String b3 = mapwindow.get(0).findElement(By.className("_5kaapu")).getText().toString().trim();
+	String b2 = resultwindow.get(0).findElement(By.xpath("//*[@id=\"ExploreLayoutController\"]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[3]/div/div/div/div/div[1]/div/div/div/div/div[2]/div[2]/div[1]/div/div[1]/div")).getText().toString().trim();
+	String b3 = resultwindow.get(0).findElement(By.className("_5kaapu")).getText().toString().trim();
 //*	String b4 = mapwindow.get(0).findElement(By.className("_16shi2n")).getText().toString().trim();
-    String b5=  mapwindow.get(0).findElement(By.className("_155sga30")).getText().toString().trim();
-    String b6=  mapwindow.get(0).findElement(By.className("_ujf3ni")).getText().toString().trim();
+    String b5=  resultwindow.get(0).findElement(By.className("_155sga30")).getText().toString().trim();
+    String b6=  resultwindow.get(0).findElement(By.className("_ujf3ni")).getText().toString().trim();
 
 
 
@@ -373,7 +373,7 @@ public void thirdTestCase() throws InterruptedException, AWTException {
 @AfterMethod
 public void closeBrowser()
 {
-//    dv.close();
+    dv.close();
 }
 		}
 
